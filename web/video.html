@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Vitality</title>
+    <title>QDodger</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -71,7 +71,9 @@
                     <i class="fa fa-bars"></i> Menu
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/agency/logo.svg" class="img-responsive" alt="">
+                    <!--
+                    <img src="img/qdodger/logo.png" style="height: 60px;" class="img-responsive" alt="">
+                    -->
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -80,16 +82,19 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#home">Home</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#process">Process</a>
+                        <a class="page-scroll" href="#download">Download</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#work">Work</a>
+                        <a class="page-scroll" href="#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Pricing</a>
+                        <a class="page-scroll" href="#app">App</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -100,7 +105,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="video">
+    <header id="home" class="video">
         <div class="overlay"></div>
         <div class="intro-content">
             <img src="img/agency/profile.svg" class="img-responsive img-centered" alt="">
@@ -109,7 +114,7 @@
             <div class="brand-name-subtext">Stop queueing, start drinking.</div>
         </div>
         <div class="scroll-down page-scroll">
-            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+            <a class="btn page-scroll" href="#home"><i class="fa fa-angle-down"></i></a>
         </div>
     </header>
 
@@ -134,7 +139,7 @@
                 <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                     <div class="about-content">
                         <i class="fa fa-heart fa-4x"></i>
-                        <h3>Explore</h3>
+                        <h3>Explore &amp; Track</h3>
                         <p>Explore the menu. Keep track of the things you love.</p>
                     </div>
                 </div>
@@ -148,7 +153,7 @@
                 <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".8s">
                     <div class="about-content">
                         <i class="fa fa-glass fa-4x"></i>
-                        <h3>Deliver</h3>
+                        <h3>Collect</h3>
                         <p>Pickup notifications and table delivery.</p>
                     </div>
                 </div>
@@ -157,7 +162,7 @@
     </section>
 
     <!-- Quote Call to Action -->
-    <aside class="cta-quote" style="background-image: url('img/qdodger/frontpage.jpg');">
+    <aside id="download" class="cta-quote" style="background-image: url('img/qdodger/frontpage.jpg');">
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -176,7 +181,7 @@
 
 
     <!-- Team Section -->
-    <section class="bg-gray">
+    <section id="team" class="bg-gray">
         <div class="container text-center wow fadeIn">
             <div class="row">
                 <div class="col-lg-12">
@@ -487,7 +492,7 @@
     </section> -->
 
     <!-- Portfolio Grid Section -->
-    <section>
+    <section id="app">
         <div class="container text-center wow fadeIn">
             <h2>The App</h2>
             <hr class="colored">
@@ -506,7 +511,7 @@
                                 <span class="filter" data-filter=".graphic">Menu</span>
                             </li>
                             <li>
-                                <span class="filter" data-filter=".web">Delivery</span>
+                                <span class="filter" data-filter=".web">Collect</span>
                             </li>
                         </ul>
                     </div>
@@ -517,9 +522,9 @@
                     <div id="portfoliolist">
                         <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
                         <!-- Grid Item 1 -->
-                        <div class="mix identity" href="img/agency/portfolio/grid/grid-1.jpg" title="Client Name">
+                        <div class="mix identity" href="img/screenshots/grid-1.png" title="Client Name">
                             <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-1.jpg" alt="">
+                                <img src="img/screenshots/grid-1.png" alt="">
                                 <div class="caption">
                                     <div class="caption-text">
                                         <a class="text-title">Client Name</a>
@@ -766,7 +771,7 @@
     </section> -->
 
     <!-- Newsletter Signup Call to Action -->
-    <section class="cta-form bg-dark">
+    <section id="contact" class="cta-form bg-dark">
         <div class="container text-center">
             <h3>Subscribe to our newsletter!</h3>
             <hr class="colored">
