@@ -292,6 +292,7 @@ header .intro-content {
   color: white;
   text-align: center;
   position: relative;
+  height: 100%;
 }
 header .brand-name {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -372,12 +373,15 @@ header .scroll-down .btn:hover {
     background-attachment: fixed;
   }
 }
+
 header.video .overlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #000;
   z-index: 998;
+  background: #000;
+  /*background-color: #000;*/
+  /*opacity: 0.5;*/
   opacity: 0;
 }
 header.video .intro-content {
@@ -388,7 +392,8 @@ header.video .scroll-down {
 }
 @media (min-width: 768px) {
   header.video .overlay {
-    opacity: 0.5;
+     /* Adjust video opacity here */
+     /*opacity: 0.2;*/
   }
 }
 aside.cta-quote {
@@ -403,6 +408,10 @@ aside.cta-quote {
   -o-background-size: cover;
   padding: 100px 0;
   text-align: center;
+}
+
+aside.darker {
+    background-color: rgba(0,0,0, 0.6);
 }
 
 .black-overlay {
@@ -987,19 +996,36 @@ aside.cta-quote span.quote {
   .pricing .pricing-item.featured-first {
     margin-right: -15px;
     margin-top: 15px;
+    /*padding-bottom: 21em;*/
   }
   .pricing .pricing-item.featured {
     position: absolute;
     width: 100%;
     left: 0;
     margin: 0;
-    padding: 45px 30px;
+    padding: 45px 30px /* 9em */;
   }
   .pricing .pricing-item.featured-last {
     margin-left: -15px;
     margin-top: 15px;
+    /*padding-bottom: 35px;*/
   }
 }
+
+.pink{
+    color: #E91E63; /* pink500 */
+}
+
+/*.button-box {
+    height: 100%;
+    position: relative;
+}
+
+.featured-sign-up {
+    position: absolute;
+    bottom: 10;*/
+}
+
 @media (min-width: 1025px) {
   .pricing {
     background-attachment: fixed;
@@ -1147,6 +1173,12 @@ footer.footer .copyright p.small {
 .btn-full-width:focus {
   color: white;
 }
+
+.img-team {
+    width: 22em;
+    height: 22em;
+}
+
 body.modern {
   font-family: "Cardo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;

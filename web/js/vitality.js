@@ -108,8 +108,9 @@ $(document).ready(function() {
     // Formstone Background - Video Background Settings
     $("header.video").background({
         source: {
-            poster: "img/agency/backgrounds/bg-mobile-fallback.jpg",
-            mp4: "mp4/beer.mp4"
+            // poster: "img/agency/backgrounds/bg-mobile-fallback.jpg",
+            poster: "img/qdodger/beer.jpg",
+            // mp4: "mp4/beer.mp4",
         }
     });
 
