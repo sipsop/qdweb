@@ -110,7 +110,7 @@ $(document).ready(function() {
         source: {
             // poster: "img/agency/backgrounds/bg-mobile-fallback.jpg",
             poster: "img/qdodger/beer.jpg",
-            // mp4: "mp4/beer.mp4",
+            mp4: "mp4/beer.mp4",
         }
     });
 
