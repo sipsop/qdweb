@@ -580,6 +580,14 @@ aside.cta-quote span.quote {
 .about-carousel .owl-controls {
   margin-top: 0;
 }
+
+
+@media (min-width: 992px) {
+    .top-button {
+        width: 30em;
+    }
+}
+
 .about-carousel .owl-controls .owl-prev,
 .about-carousel .owl-controls .owl-next {
   text-align: center;
