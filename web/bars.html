@@ -37,6 +37,43 @@
 
     <link href="css/vitality-pink.css" rel="stylesheet" type="text/css">
 
+    <script src="http://cdn.auth0.com/js/lock/10.2/lock.min.js"></script>
+    <script type="text/javascript">
+        // Initiating our Auth0Lock
+        var lock = new Auth0Lock(
+          'phA8QFWKknNtcDwVefccBf82sIp4bw6c',
+          'tuppu.eu.auth0.com',
+          auth: {
+              redirectUrl: 'http://localhost/signed-up.html',
+              responseType: 'code',
+              params: {
+                scope: 'openid email',
+              }
+            }
+        );
+
+        // Listening for the authenticated event
+        lock.on("authenticated", function(authResult) {
+          // Use the token in authResult to getProfile() and save it to localStorage
+          lock.getProfile(authResult.idToken, function(error, profile) {
+            if (error) {
+              // Handle error
+              return;
+            }
+
+            localStorage.setItem('idToken', authResult.idToken);
+            localStorage.setItem('profile', JSON.stringify(profile));
+            // showLoggedIn();
+          });
+        });
+
+        // Display the user's profile
+        function showLoggedIn() {
+          var profile = JSON.parse(localStorage.getItem('profile'));
+          document.getElementById('nickname').textContent = profile.nickname;
+        }
+    </script>
+
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
