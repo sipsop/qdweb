@@ -374,6 +374,22 @@ header .scroll-down .btn:hover {
   }
 }
 
+div.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+div.video-content {
+    z-index: 100;
+}
+
 header.video .overlay {
   position: absolute;
   height: 100%;
