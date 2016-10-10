@@ -7,8 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link ref="canonical" href="http://qdodger.com/bars.html" />
 
-    <title>QDodger</title>
+    <!-- SEO -->
+    <title>Ordering and payments app for pubs, clubs and bars | QDodger</title>
+    <meta name="description"
+          content="Let customers order and pay from their phones. Sign up Now.">
+    <meta name="keywords" content="order phone pay bar drinks" />
+    <meta property="fb:app_id" content="1257212287622627" />
+    <meta property="og:title" content="Let customers order and pay from their phones. Sign up Now." />
+    <meta property="og:type" content="blog" />
+    <meta property="og:description"
+          content="Let customers order without friction and drive repeat sales. Sign up Now." />
+    <meta property="og:url" content="http://qdodger.com/" />
+    <meta property="og:image" content="http://qdodger.com/img/qdodger/logo-with-name.png" />
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -38,41 +50,6 @@
     <link href="css/vitality-pink.css" rel="stylesheet" type="text/css">
 
     <script src="http://cdn.auth0.com/js/lock/10.2/lock.min.js"></script>
-    <script type="text/javascript">
-        // Initiating our Auth0Lock
-        var lock = new Auth0Lock(
-          'phA8QFWKknNtcDwVefccBf82sIp4bw6c',
-          'tuppu.eu.auth0.com',
-          auth: {
-              redirectUrl: 'http://localhost/signed-up.html',
-              responseType: 'code',
-              params: {
-                scope: 'openid email',
-              }
-            }
-        );
-
-        // Listening for the authenticated event
-        lock.on("authenticated", function(authResult) {
-          // Use the token in authResult to getProfile() and save it to localStorage
-          lock.getProfile(authResult.idToken, function(error, profile) {
-            if (error) {
-              // Handle error
-              return;
-            }
-
-            localStorage.setItem('idToken', authResult.idToken);
-            localStorage.setItem('profile', JSON.stringify(profile));
-            // showLoggedIn();
-          });
-        });
-
-        // Display the user's profile
-        function showLoggedIn() {
-          var profile = JSON.parse(localStorage.getItem('profile'));
-          document.getElementById('nickname').textContent = profile.nickname;
-        }
-    </script>
 
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -146,16 +123,19 @@ mixpanel.init("0fddfeceebeea0e41836bd01b485f467");</script><!-- end Mixpanel -->
 
     <!-- Header -->
     <header id="home" class="video">
-        <div class="overlay"></div>
-        <div class="intro-content">
-            <img src="img/qdodger/logo-white.png" class="img-responsive img-centered" alt="">
-            <div class="brand-name">QDodger</div>
-            <hr class="colored">
-            <div class="brand-name-subtext">Excite and engage customers with our app.<br />
-                Focus on service. Sell more.</div>
-        </div>
-        <div class="scroll-down page-scroll">
-            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+        <div class="video">
+            <div class="overlay"></div>
+            <div class="intro-content">
+                <img src="img/qdodger/logo-white.png" class="img-responsive img-centered" alt="">
+                <div class="brand-name">QDodger</div>
+                <hr class="colored">
+                <div class="brand-name-subtext">
+                    Focus on service, not payments and order taking.
+                </div>
+            </div>
+            <div class="scroll-down page-scroll">
+                <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+            </div>
         </div>
     </header>
 
