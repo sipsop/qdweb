@@ -92,7 +92,6 @@ Feel free to ask us any question if you have by email support@qdodger.com or wri
 
 ## Definitions
 
-
 * App: the application for iOS, Android, Windows etc through which Venues can be discovered and Orders can be placed
 * Order: a collection of Items that can be ordered
 * Item: any item that can be part of an Order (e.g. food, snacks, alcoholic or non-alcoholic drinks, etc)
