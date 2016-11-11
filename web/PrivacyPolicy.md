@@ -9,7 +9,7 @@ By using our services, you are agreeing to these terms and conditions. so please
 You agree that any use by you of our services shall constitute and legally bind you as *‘your acceptance of the agreement’* and if you like you can store this document and our privacy policy for your own records. If you are acting on behalf of a company or third party, the same rules will apply and you accept and agree to our terms, conditions and policies. 
 
 
-Alt-H1 Users/ Customer's Agreement for Our Services:
+# H1 Users/ Customer's Agreement for Our Services:
 
 
 Our Relationship with You
