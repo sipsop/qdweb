@@ -1,0 +1,13 @@
+#!/bin/bash
+
+ulimit -Sn unlimited
+sudo service nginx start
+
+
+# echo >nginx.conf <<EOF
+# http {
+#     server {
+#         root "$1"
+#     }
+# }
+# EOF
